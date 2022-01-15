@@ -23,3 +23,11 @@ for t in data:
 		less.append(t)
 print("total comments less than 100 words: ", len(less))
 print(less[0])
+
+
+good = []
+for x in data:
+	if 'good' in x:
+		good.append(x)
+print(len(good))
+print(good[0])
