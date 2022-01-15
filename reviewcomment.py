@@ -10,7 +10,16 @@ with open('reviews.txt', 'r') as f:
 			print(len(data))
 print('the file has been uploaded succussfully, it has total: ', len(data), 'comments')
 
+
 sum_len = 0
 for d in data:
 	sum_len += len(d) # sum = sum + len(d)
 print('the average length of each comment: ', sum_len / len(data)) 
+# total length / total comments
+
+less = []
+for t in data:
+	if len(t) < 100:
+		less.append(t)
+print("total comments less than 100 words: ", len(less))
+print(less[0])
